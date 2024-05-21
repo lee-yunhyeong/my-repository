@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 누적숫자 입력이 안되었거나, 숫자가 아닌 문자가 입력되면 alert해주는 chk함수구현
+	function chk() {
+		if(!frm.num.value){
+			alert("누적합계할 숫자를 입력해 주셔야 합니다.");
+			frm.num.focus();
+			return false;
+		}
+		if(isNaN(frm.num.value)){
+			alert("숫자를 입력하셔야합니다.");
+			frm.num.focus();
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<h3>누적합계 숫자</h3>
+	<form action="SumServlet" name="frm" onsubmit="reurn chk()">
+		누적숫자: <input name="num"><br><br>
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>

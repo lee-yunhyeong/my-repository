@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function chk() {
+		
+	}
+</script>
+</head>
+<body>
+	<h3>배경색을 선택하세요</h3>
+	<form action="ColorServlet" name="frm" method="get" onsubmit="return chk()">
+		<label for="m1">빨강</label>
+		<input type="radio" name="color" id="m1" value="red"><br>
+		<label for="m2">주황</label>
+		<input type="radio" name="color" id="m2" value="orange"><br>
+		<label for="m3">노랑</label>
+		<input type="radio" name="color" id="m3" value="yellow"><br>
+		<label for="m4">초록</label>
+		<input type="radio" name="color" id="m4" value="green"><br>
+		<label for="m5">파랑</label>
+		<input type="radio" name="color" id="m5" value="blue"><br>
+		<label for="m6">보라</label>
+		<input type="radio" name="color" id="m6" value="purple"><br>
+		<br><br>
+		<input type="submit" value="완료">
+	</form>
+</body>
+</html>
